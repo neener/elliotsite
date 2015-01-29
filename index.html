@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elliot Kaufman</title>
+    <link href="css/ek.css" rel="stylesheet">
+  </head>
+  <body>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.smooth-scroll.js"></script>
+  
+    <ul id="pics">
+      <li><a href='#ca1'><img src="images/CA1_thumb.jpg"alt="CA1_thumb"></a></li>
+      <li><a href='#ko'><img src="images/KO_thumb.jpg"alt="KO_thumb"></a></li>
+      <li><a href='#ay'><img src="images/AY_thumb.jpg"alt="AY_thumb"></a></li>
+      <li><a href='#li'><img src="images/LI_thumb.jpg"alt="LI_thumb"></a></li>
+      <li><a href='#nm'><img src="images/NM_thumb.jpg"alt="NM_thumb"></a></li>
+      <li><a href='#gb2'><img src="images/GB2_thumb.jpg"alt="GB2_thumb"></a></li>
+      <li><a href='#tm'><img src="images/TM_thumb.jpg"alt="TM_thumb"></a></li>
+      <li><a href='#ky'><img src="images/KY_thumb.jpg"alt="KY_thumb"></a></li>
+      <li><a href='#gb1'><img src="images/GB1_thumb.jpg"alt="GB1_thumb"></a></li>
+      <li><a href='#c88'><img src="images/c88_thumb.jpg"alt="c88_thumb"></a></li>
+      <li><a href='#ca2'><img src="images/CA2_thumb.jpg"alt="CA2_thumb"></a></li>
+      <li><a href='#os'><img src="images/OS_thumb.jpg"alt="OS_thumb"></a></li>
+      <li><a href='#os2'><img src="images/OS2_thumb.jpg"alt="OS2_thumb"></a></li>
+      <li><a href='#mw'><img src="images/MW_thumb.jpg"alt="MW_thumb"></a></li>
+      <li><a href='#ca3'><img src="images/CA3_thumb.jpg"alt="CA3_thumb"></a></li>
+    </ul>
+
+    <div id="container">
+        <div id='ca1'><img src="images/CA1.jpg" alt="CA1"></div>
+        <div id='ay'><img src="images/AY.jpg" alt="AY"></div>
+        <div id='li'><img src="images/LI.jpg" alt="LI"></div>
+        <div id='nm'><img src="images/NM.jpg" alt="NM"></div>
+        <div id='gb2'><img src="images/GB2.jpg" alt="GB2"></div>
+        <div id='tm'><img src="images/TM.jpg" alt="TM"></div>
+        <div id='ky'><img src="images/KY.jpg" alt="KY"></div>
+        <div id='gb1'><img src="images/GB1.jpg" alt="GB1"></div>
+        <div id='c88'><img src="images/c88.jpg" alt="c88"></div>
+        <div id='ca2'><img src="images/CA2.jpg" alt="CA2"></div>
+        <div id='os'><img src="images/OS.jpg" alt="OS"></div>
+        <div id='os2'><img src="images/OS2.jpg" alt="OS2"></div>
+        <div id='mw'><img src="images/MW.jpg" alt="MW"></div>
+        <div id='ca3'><img src="images/CA3.jpg" alt="CA3"></div>
+    </div>
+    <script>
+      $('a').click(function(){
+      $('html, body').animate({
+          scrollTop: $( $.attr(this, 'href') ).offset().top
+      }, 700);
+      return false;
+      });
+    </script>
+  </body>
+</html>
